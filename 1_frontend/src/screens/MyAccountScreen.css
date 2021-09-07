@@ -1,0 +1,22 @@
+.teams-name {
+  margin: 40px 20px;
+  text-align: center;
+  font-size: 1.7em;
+  color: rgb(61, 61, 61);
+}
+
+.main-teams-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.images {
+  width: 200px;
+  height: 200px;
+}
+
+.card_shadow {
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+}
