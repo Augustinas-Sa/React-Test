@@ -1,0 +1,47 @@
+header {
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.header-icon {
+  font-size: 30px;
+  margin-left: 50px;
+  color: rgb(88, 88, 88);
+}
+
+header nav ul li {
+  padding: 15px;
+}
+
+header nav ul li:hover {
+  background: white;
+  border-radius: 10px;
+}
+
+.home-link {
+  text-decoration: none;
+  color: rgb(61, 61, 61);
+  margin-right: 10px;
+}
+
+.home-link:hover {
+  color: grey;
+}
+
+.account-link {
+  text-decoration: none;
+  color: rgb(61, 61, 61);
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+.account-link:hover {
+  color: grey;
+}
