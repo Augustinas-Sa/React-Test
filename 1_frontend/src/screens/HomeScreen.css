@@ -78,3 +78,9 @@ main .main-container .signup {
 .new-user-color {
   color: rgb(61, 61, 61);
 }
+
+.form-message {
+  margin-top: 15px;
+  padding: 5px 10px;
+  color: rgb(61, 61, 61);
+}
