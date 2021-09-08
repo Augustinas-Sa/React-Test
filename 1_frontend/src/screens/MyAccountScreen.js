@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './MyAccountScreen.css';
 import Counter from '../components/Counter';
+import Button from '../components/Button';
 
 const MyAccountScreen = () => {
   // hooks
@@ -16,8 +17,9 @@ const MyAccountScreen = () => {
   }, []);
 
   return (
-    <main>
+    <main className='account-main'>
       <section>
+        <Button />
         <h2 className='teams-name'>All teams</h2>
         <div className='main-teams-div'>
           {teams.map((item) => (
