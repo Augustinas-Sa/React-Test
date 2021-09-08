@@ -12,8 +12,6 @@ const Header = () => {
   // - side effects
   useEffect(() => {
     if (localStorage.getItem('user')) {
-      console.log('user founded');
-
       dispatch({
         type: 'LOGIN',
         payload: localStorage.getItem('user'),
