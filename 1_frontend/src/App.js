@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // screens
 import HomeScreen from './screens/HomeScreen';
-import MyAccountScreen from './screens/MyAccountScreen';
 
 // components
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ProtectedRoute from './ProtectedRoute';
 
 // context
 export const UserContext = React.createContext();
@@ -41,7 +41,7 @@ function App() {
           <Header />
           <Switch>
             <Route exact path='/' component={HomeScreen} />
-            <Route path='/my-account' component={MyAccountScreen} />
+            <Route path='/my-account' component={ProtectedRoute} />
           </Switch>
           <Footer />
         </Router>
