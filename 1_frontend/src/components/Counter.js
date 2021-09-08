@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Counter.css';
 
 const Counter = () => {
@@ -9,11 +9,30 @@ const Counter = () => {
   // - side effects
   useEffect(() => {
     return () => {};
-  }, [count]);
+  }, []);
 
   // Functions
-  const increment = () => setCount(count + 1);
-  const decrement = () => setCount(count - 1);
+  let counted = useRef(false);
+
+  const increment = () => {
+    if (!counted.current) {
+      setCount(count + 1);
+
+      counted.current = true;
+    }
+
+    return;
+  };
+
+  const decrement = () => {
+    if (!counted.current) {
+      setCount(count - 1);
+
+      counted.current = true;
+    }
+
+    return;
+  };
 
   return (
     <div className='counter-div'>
